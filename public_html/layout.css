@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26-Jul-2016, 14:17:38
+    Author     : nfriend
+*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Mobile first */
+.col, .two-col, .four-col, .six-col, .eight-col {
+    flex: 1 100%;
+    height: 200px;
+    text-align: center;
+
+}
+
+.mobile-landscape, .tablet, .tablet-landscape {
+    display: none;
+}
+
+
+
+
+/* Mobile landscape */
+@media screen and (min-width: 568px) {
+.container {
+  display: flex;
+  flex-direction: row;
+  //flex-wrap:wrap;
+}
+
+.two-col, .four-col, .six-col, .eight-col {
+        flex: 1 50%;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Tablet landscape */
+@media screen and (min-width: 1024px) {
+
+}
+ 
+

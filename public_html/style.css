@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26-Jul-2016, 14:17:26
+    Author     : nfriend
+*/
+
+/* Mobile first */
+h1 {
+    font-size: 2em;
+    position: relative;
+    top:40%;
+    text-align: center;
+}
+
+.box {
+    border-color: #000;
+    border-width: 6px;
+    border-style: solid;
+    margin: 10px;
+}
+
+.mobile-landscape, .tablet, .tablet-landscape {
+    display: none;
+}
+
+
+ body {background-color: red;}   
+
+/* Mobile landscape */
+@media screen and (min-width: 568px) {
+ body {background-color: green;}  
+ .mobile-landscape {
+     display: block
+ }
+ .mobile, .tablet, .tablet-landscape {
+    display: none;
+}
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+ body {background-color: blue;}   
+.tablet  {
+     display: block
+ }
+.mpbile, .mobile-landscape, .tablet-landscape {
+    display: none;
+}
+}
+
+/* Tablet landscape */
+@media screen and (min-width: 1024px) {
+ body {background-color: yellow;}   
+.tablet-landscape {
+     display: block
+ }
+ .mobile, .mobile-landscape, .tablet {
+    display: none;
+}
+ 
+}
+
